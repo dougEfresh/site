@@ -182,6 +182,37 @@ body     { pointer-events: none; }
     transform:         translateY(0px);
 }
 
+#projects {
+    padding: 0;
+}
+
+#projects .try {
+    font-size: 64px;
+    position: absolute;
+    top: -0.5em;
+    left: 1.5em;
+    
+    -webkit-transform: translateZ(20px);
+    -moz-transform:    translateZ(20px);
+    -ms-transform:     translateZ(20px);
+    -o-transform:      translateZ(20px);
+    transform:         translateZ(20px);
+}
+
+#projects h1 {
+    font-size: 100px;
+    text-decoration:   underline;
+    -webkit-transform: translateZ(50px);
+    -moz-transform:    translateZ(50px);
+    -ms-transform:     translateZ(50px);
+    -o-transform:      translateZ(50px);
+    transform:         translateZ(50px);
+}
+
+#projects .footnote {
+    font-size: 32px;
+}
+
 /* impress.js title */
 
 #title {
@@ -492,5 +523,34 @@ body     { pointer-events: none; }
 
 .impress-not-supported .fallback-message {
     display: block;
+}
+
+a.screen, a.screen:visited {
+color:#c00; 
+position:relative; 
+z-index:1;
+}
+a.screen b {
+position:absolute;
+visibility:hidden; /* hide the image */
+width:200px; /* give it a width */
+height:0; /* no height to solve an Opera bug that makes it selectable when hidden */
+border:1px solid #000; /* add a border */
+left:0; /* position:the image */
+top:-150px;
+}
+a.screen:hover {
+text-decoration:none; 
+border:0; /* needed for this to work in IE */ 
+z-index:1000;
+}
+a.screen:hover b {
+visibility:visible; /* make the image visible */
+height:150px; /* now give it a height */
+cursor:pointer; /* for IE */
+z-index:500; 
+}
+a.screen:hover b img {
+border:0; /* remove the link border */
 }
 
