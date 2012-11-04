@@ -28,14 +28,18 @@
         <q>Welcome to my <a href="http://en.wikipedia.org/wiki/Self-image#Residual_self-image" title="Your appearance now is what we call residual self image. It is the mental projection of your digital self. *Morpheus "> Residual self-image</a></q>
     </div>
 
-    <div class="step" data-x="-1000" data-y="-800">
-        <q>I am a <strong>software developer</strong> living in 
-	  <a href="http://goo.gl/maps/uGqYq">Brooklyn, NY</a>. Sometimes I fiddle with my <strong>guitar</strong>; Collide balls at <b>pool</b>; Swim in some <a href="http://www.toughmudder.com"> mud </a> and run around a field chasing a <strong>soccer</strong> ball.
-	 </q>
+    <div id="act" class="step" data-x="-1000" data-y="-800">
+        <p>I am a <b class="position-up"> software developer</b> living in 
+	  <a href="http://goo.gl/maps/uGqYq">Brooklyn, NY</a>. 
+	  Sometimes I fiddle with my guitar;<br\>
+	  <b class="rotate-down">Collide</b> balls at pool;<br\>
+	  <b class="rotate-up">Kick</b> a soccer ball around.
+	  Swim in some <a href="http://www.toughmudder.com"> <b class="scaling"> mud </b></a> 
+	 </p>
     </div>
 
     <div class="step" data-x="0" data-y="-500">
-        <q>Ever since my Father got our first modem when I was a teenager I've been actively <strong>exploring</strong> 
+        <q>Ever since my father got our first modem when I was a teenager I've been actively <strong>exploring</strong> 
 	  technology and online social networks. (Anyone remember <a href="http://en.wikipedia.org/wiki/Bulletin_board_system">BBS</a>?)
 	</q>
     </div>
@@ -54,7 +58,7 @@
 	</p>
     </div>
 
-    <div id="history" class="step slide" data-x="550" data-y="-1200"  data-z="-3000" data-rotate="200">
+    <div id="history" class="step" data-x="950" data-y="-1200"  data-z="-3000" data-rotate="200">
       <p>I've worked with the members and former members of the 
 	<a href="http://www.fbi.gov">FBI</a>
 	and <a href="http://www.uspsoig.gov/">Postal Inspector General</a> 
@@ -73,24 +77,20 @@
 	I have written a fraud detection system, anti-money laundary framework and been a coperate cyber-security watchdog.
       </p>
       <br/>
-      <img src="img/fbi.png" height="200" width="200" > 
-      <img src="img/pig.jpg" height="150" width="240" > 
     </div>
 
-   <div class="step" data-x="0" data-y="-2450"  data-z="1000" data-rotate="0">
+   <div id="current" class="step" data-x="0" data-y="-1850"  data-z="1000" data-rotate="0">
      <q>
-        I currently work for a <a href="http://www.limebrokerage.com"/>HFT</a> 
-        firm focusing on real-time reporting for hundreds of millions of equity (i.e. stock) orders per day. 
-        I have developed <a href="http://www.finra.com"> compilance </a> reporting systems.
-        I have co-developed a distrubuted abstract data registry <a href="http://commons.apache.org/vfs/"> API</a> to store or access files from any server on the (internal) network. 
+        I currently work for a <a href="http://www.limebrokerage.com"/>HFT</a>  
+        provider focusing on real-time reporting for hundreds of millions of equity (i.e. stock) orders per day. 
      </q>
     </div>
-<div id="projects" class="step" data-x="0" data-y="-3450"  data-z="1000" >
+<div id="projects" class="step" data-x="0" data-y="-2450"  data-z="1000" >
   <q>
     <h1>Projects</h1>
     <ul>
       <li>
-	<a href="http://www.github.com/dougEfresh/openssh-log-passwd"> Open SSH Password Logger</a>
+	<a href="http://www.github.com/dougEfresh/openssh-log-passwd"> OpenSSH Password Logger</a>
       </li>
       <li>
 	<a href="http://unixhelp.ed.ac.uk/CGI/man-cgi?at">At </a> <a href="http://www.github.com/dougEfresh/atJava">Java</a>
@@ -101,9 +101,15 @@
     </ul>
   </q>
 </div>
-   
-    <div id="overview" class="step" data-x="-1000" data-y="-1500" data-scale="3">
-    </div>
+
+<!--
+<iframe src="http://ghbtns.com/github-btn.html?user=bartaz&amp;repo=impress.js&amp;type=fork&amp;count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110px" height="20px"></iframe>
+</div>
+-->
+
+
+<div id="overview" class="step" data-x="-1000" data-y="-1500" data-scale="3">
+</div>
 
 </div>
 
@@ -118,20 +124,7 @@ if ("ontouchstart" in document.documentElement) {
 
 <script src="js/impress.js"></script>
 <script>
-
-  function ShowImage(src)
-  {
-  var img = document.getElementById('popupImage');
-  img.src = src;
-  img.style.display = "block";
-  }
-  function HideImage()
-  {
-  document.getElementById('popupImage').style.display = "none";
-  }
-
   impress().init();
-  
 </script>
 </body>
 </html>
