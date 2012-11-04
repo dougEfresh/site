@@ -1,4 +1,0 @@
-function showImg(x) {
-
-
-}
