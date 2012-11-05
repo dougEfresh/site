@@ -13,18 +13,13 @@
     <link rel="shortcut icon" href="img/favicon.png" />
     <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
 </head>
-<script src="js/ga.js"/>
-<script>
-  googleTrack("dougchimento.com");
-</script>
 
 <body class="impress-not-supported">
-
-<div class="fallback-message">
+  <div class="fallback-message">
     <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
     <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
-</div>
-
+  </div>
+  
 <div id="impress">
     <div id="intro" class="step " data-x="-1500" data-y="-1500">
         <q>Welcome to my residual self-image<sup>*</sup>
@@ -116,7 +111,8 @@
   <a href="mailto:doug@dougchimento.com"><img width="75px" height="50px" src="img/email.png"/></a>
   <a href="http://www.linkedin.com/pub/douglas-chimento/2/a83/b59" target="_blank"><img src="img/logo_132x32_2.png" /></a>
   <iframe src="http://ghbtns.com/github-btn.html?user=dougEfresh&type=follow&count=true&size=large" allowtransparency="true" frameborder="0" scrolling="0" width="246px" height="30px"></iframe>
-            
+  <br/>
+  Douglas Chimento
 </q>
 </div>
 
@@ -141,6 +137,19 @@ if ("ontouchstart" in document.documentElement) {
 <script src="js/impress.js"></script>
 <script>
   impress().init();
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36076924-1']);
+  _gaq.push(['_setDomainName', 'dougchimento.com']);
+  _gaq.push(['_setAllowLinker', true]);
+  _gaq.push(['_trackPageview']);
+  
+  (function() {
+  var ga = document.createElement('script'); 
+  ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
 </script>
 </body>
 </html>
