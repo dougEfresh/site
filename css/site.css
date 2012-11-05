@@ -138,13 +138,13 @@ body     { pointer-events: none; }
     position: fixed;
     left: 0;
     right: 0;
-    bottom: 10px;
+    top: 10px;
     
     background: rgba(0,0,0,0.5);
     color: #EEE;
     text-align: center;
     
-    font-size: 50px;
+    font-size: 35px;
     padding: 20px;
     
     z-index: 100;
@@ -168,7 +168,7 @@ body     { pointer-events: none; }
     position: fixed;
     left: 0;
     right: 0;
-    top: 10px;
+    bottom: 10px;
 
     background: rgba(0,0,0,0.5);
     color: #EEE;
@@ -191,6 +191,10 @@ body     { pointer-events: none; }
     transition:         opacity 1s,         transform 0.5s 1s;
 }
 
+
+.morpheus .footnote {
+    font-size: 32px;
+}
 
 .impress-on-intro .morpheus {
     opacity: 1;
@@ -392,7 +396,7 @@ body     { pointer-events: none; }
 .fallback-message {
     font-family: sans-serif;
     line-height: 1.3;
-    
+
     display: none;
     width: 780px;
     padding: 10px 10px 0;
@@ -419,8 +423,8 @@ body     { pointer-events: none; }
 }
 
 a.screen, a.screen:visited {
-color:#c00; 
-position:relative; 
+color:#c00;
+position:relative;
 z-index:1;
 }
 a.screen b {
@@ -433,15 +437,15 @@ left:0; /* position:the image */
 top:-150px;
 }
 a.screen:hover {
-text-decoration:none; 
-border:0; /* needed for this to work in IE */ 
+text-decoration:none;
+border:0; /* needed for this to work in IE */
 z-index:1000;
 }
 a.screen:hover b {
 visibility:visible; /* make the image visible */
 height:150px; /* now give it a height */
 cursor:pointer; /* for IE */
-z-index:500; 
+z-index:500;
 }
 a.screen:hover b img {
 border:0; /* remove the link border */
